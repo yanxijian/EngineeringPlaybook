@@ -40,3 +40,7 @@ python -m unittest discover -s scripts/tests -p "test_*.py" -v
 ```
 
 需要 Python 3.9 或更高版本，不需要第三方依赖。历史 PowerShell 实现可从迁移前的 Git 提交中临时取回，但不作为长期维护的第二套实现。
+
+## License
+
+[MIT](./LICENSE) © 2026 EngineeringPlaybook contributors
