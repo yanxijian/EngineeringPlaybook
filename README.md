@@ -1,45 +1,47 @@
 # Engineering Playbook
 
-可独立复用的技术方案评审协议、角色指令、模板和结构检查工具。它不依赖特定产品、工作区路径、AI 模型或会话历史。
+**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
-## 内容
+A reusable design-review protocol, role instructions, templates and a structure checker. It does not depend on a particular product, workspace layout, AI model or session history.
 
-- [REVIEW-PROTOCOL.md](REVIEW-PROTOCOL.md)：流程、角色所有权、证据标准与报告命名规则。
-- `.github/instructions/`：方案设计者和独立评审员的可发现指令。
-- `templates/`：方案、评审报告和设计者草稿回应模板。
-- `scripts/`：Python 3.9+ 标准库实现的跨平台结构检查及其 fixtures。
+## Contents
 
-## 最短流程
+- [REVIEW-PROTOCOL.md](REVIEW-PROTOCOL.md): the workflow, role ownership, the evidence standard and report naming rules.
+- `.github/instructions/`: discoverable instructions for the designer and for the independent reviewer.
+- `templates/`: templates for designs, review reports and the designer's drafts/replies.
+- `scripts/`: a cross-platform structure checker built on the Python 3.9+ standard library, plus its fixtures.
 
-1. 设计者以 `templates/design-template.md` 创建完整方案，提供评审依据导航。
-2. 评审员独立核查实际证据，在同目录创建 `<方案名>-review.md`。
-3. 设计者只在方案中核实并回应报告，重整完整方案。
-4. 评审员只重写评审报告，保留当前有效结论。
+## Shortest workflow
 
-角色在当前任务中固定。双方都不得修改对方拥有的文档；疑问、反证和补充说明只能写入自己拥有的产物。详情见 [REVIEW-PROTOCOL.md](REVIEW-PROTOCOL.md)。
+1. The designer creates a complete design from `templates/design-template.md` and provides navigation for the review.
+2. The reviewer checks the actual evidence independently and writes `<design-name>-review.md` in the same directory.
+3. The designer verifies and answers the report inside the design, then restructures it into one coherent document.
+4. The reviewer rewrites only the review report, keeping the conclusions that still hold.
 
-## 检查
+Roles stay fixed for the duration of a task. Neither side edits a document the other owns; questions, counter-evidence and clarifications belong in your own artifact. Details in [REVIEW-PROTOCOL.md](REVIEW-PROTOCOL.md).
+
+## Checks
 
 ```shell
-# 首次提交方案前的预检
+# Pre-check before submitting a design
 python scripts/check_review_documents.py --design-path feature-plan.md
 
-# 方案收到评审报告后的复审检查
+# Re-check after the design received a review report
 python scripts/check_review_documents.py \
   --design-path feature-plan.md \
   --review-path feature-plan-review.md
 
-# 将未回应的 D 类扩展设计建议提升为错误
+# Turn unanswered class-D design suggestions into errors
 python scripts/check_review_documents.py \
   --design-path feature-plan.md \
   --review-path feature-plan-review.md \
   --require-design-responses
 
-# 运行内置 fixtures
+# Run the bundled fixtures
 python -m unittest discover -s scripts/tests -p "test_*.py" -v
 ```
 
-需要 Python 3.9 或更高版本，不需要第三方依赖。历史 PowerShell 实现可从迁移前的 Git 提交中临时取回，但不作为长期维护的第二套实现。
+Python 3.9 or newer is required; there are no third-party dependencies. The historical PowerShell implementation can be pulled from the pre-migration Git history when needed, but it is not maintained as a second implementation.
 
 ## License
 
