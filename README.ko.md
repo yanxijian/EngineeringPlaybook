@@ -2,7 +2,11 @@
 
 **한국어** · [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-<!-- translated-from: README.md sha256:37482806e847 -->
+[![hygiene](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml/badge.svg)](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+
+<!-- translated-from: README.md sha256:bcdeb1692aa5 -->
 
 설계 리뷰 프로토콜, 역할별 지침, 템플릿, 구조 검사기를 재사용할 수 있는 형태로 모은 것입니다. 특정 제품, 워크스페이스 구성, AI 모델, 세션 이력에 의존하지 않습니다.
 

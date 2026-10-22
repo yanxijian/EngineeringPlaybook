@@ -2,7 +2,11 @@
 
 **简体中文** · [English](README.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
-<!-- translated-from: README.md sha256:37482806e847 -->
+[![hygiene](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml/badge.svg)](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+
+<!-- translated-from: README.md sha256:bcdeb1692aa5 -->
 
 可独立复用的技术方案评审协议、角色指令、模板和结构检查工具。它不依赖特定产品、工作区路径、AI 模型或会话历史。
 

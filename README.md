@@ -2,6 +2,10 @@
 
 **English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
+[![hygiene](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml/badge.svg)](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+
 A reusable design-review protocol, role instructions, templates and a structure checker. It does not depend on a particular product, workspace layout, AI model or session history.
 
 ## Contents

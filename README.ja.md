@@ -2,7 +2,11 @@
 
 **日本語** · [English](README.md) · [简体中文](README.zh-CN.md) · [한국어](README.ko.md)
 
-<!-- translated-from: README.md sha256:37482806e847 -->
+[![hygiene](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml/badge.svg)](https://github.com/yanxijian/EngineeringPlaybook/actions/workflows/hygiene.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+
+<!-- translated-from: README.md sha256:bcdeb1692aa5 -->
 
 設計レビューのプロトコル、役割ごとの指示、テンプレート、構造チェッカーを再利用できる形でまとめたものです。特定の製品、ワークスペースの構成、AI モデル、セッション履歴には依存しません。
 
