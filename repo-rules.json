@@ -126,5 +126,16 @@
   "about": {
     "description": "Reusable design-review protocol, role instructions, templates and a cross-platform structure checker | 可复用的设计评审协议、角色指令、模板与跨平台结构检查脚本",
     "order": "en-zh"
+  },
+  "actions": {
+    "require": {
+      "actions/checkout": "v7",
+      "actions/setup-python": "v7",
+      "actions/setup-node": "v7",
+      "actions/upload-artifact": "v7",
+      "actions/download-artifact": "v8",
+      "actions/cache": "v6"
+    },
+    "allow_sha": true
   }
 }
