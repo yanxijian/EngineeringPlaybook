@@ -122,5 +122,9 @@
       "actions/workflows/",
       "img.shields.io/badge/License"
     ]
+  },
+  "about": {
+    "description": "Reusable design-review protocol, role instructions, templates and a cross-platform structure checker | 可复用的设计评审协议、角色指令、模板与跨平台结构检查脚本",
+    "order": "en-zh"
   }
 }
